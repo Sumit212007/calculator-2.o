@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator new version</title>
+    <link rel="stylesheet" href="calculator.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-<insert-correct-hash>" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="menu-btn header-btn" title="Open Nevagation">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <h1>Standard</h1>
+            <div class="history-btn header-btn" title="History">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+            </div>
+        </div>
+        <div class="calculator">
+            <p class="result"></p>
+            <p class="buttons">
+                <button class="sym-btn" onclick="
+                    updateCalculation(' % ');
+                ">%</button>
+                <button class="sym-btn" onclick="
+                    calculation = '';
+                    displayResult();
+                ">CE</button>
+                <button class="sym-btn" onclick="
+                    calculation = '';
+                    displayResult();
+                ">C</button>
+                <button class="sym-btn" onclick="
+                    backspace();">
+                    <i class="fa-solid fa-delete-left"></i>
+                </button>
+
+                <button class="num-btn" onclick="updateCalculation('1/x')">1/x</button>
+                <button class="num-btn" onclick="updateCalculation('')">x^2</button>
+                <button class="num-btn" onclick="updateCalculation('')">2√x</button>
+                <button class="sym-btn" onclick="updateCalculation(' / ')">
+                    <i class="fa-solid fa-divide"></i>
+                </button>
+
+                <button class="num-btn" onclick="updateCalculation('7')">7</button>
+                <button class="num-btn" onclick="updateCalculation('8')">8</button>
+                <button class="num-btn" onclick="updateCalculation('9')">9</button>
+                <button class="sym-btn" onclick="updateCalculation(' * ')">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+                <button class="num-btn" onclick="updateCalculation('4')">4</button>
+                <button class="num-btn" onclick="updateCalculation('5')">5</button>
+                <button class="num-btn" onclick="updateCalculation('6')">6</button>
+                <button class="sym-btn" onclick="updateCalculation(' - ')">
+                    <i class="fa-solid fa-minus"></i>
+                </button>
+
+                <button class="num-btn" onclick="updateCalculation('1')">1</button>
+                <button class="num-btn" onclick="updateCalculation('2')">2</button>
+                <button class="num-btn" onclick="updateCalculation('3')">3</button>
+                <button class="sym-btn" onclick="updateCalculation(' + ')">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+
+                <button class="sym-btn" onclick="updateCalculation(' + / - ')">+/-</button>
+                <button class="num-btn" onclick="updateCalculation('0')">0</button>
+                <button class="num-btn" onclick="updateCalculation('.')">.</button>
+                <button class="sym-btn css-btn" onclick="
+                    calculateResult();">
+                    <i class="fa-solid fa-equals"></i>
+                </button>
+
+            </p>
+
+            </div>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
