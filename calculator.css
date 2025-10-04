@@ -62,6 +62,7 @@ body {
         max-width: 350px;
         padding: 8px;
         margin: 5px auto;
+        height: auto;
     }
 
     .result {
@@ -225,5 +226,3 @@ button:hover {
     background-color: deepskyblue;
     color: black;
 }
-
-
