@@ -193,7 +193,7 @@ h1 {
 
 button {
     padding: 10px;
-    height: 90px;
+    height: 80px;
     font-size: 24px;
     border: none;
     border-radius: 5px;
@@ -225,3 +225,4 @@ button:hover {
     background-color: deepskyblue;
     color: black;
 }
+
