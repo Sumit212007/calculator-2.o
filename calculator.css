@@ -172,15 +172,15 @@ h1 {
 }
 
 .result {
-    justify-content: left;
-    display: block;
+    justify-content: flex-end;
+    display: flex;
     padding: 10px;
     margin: 5px;
     font-size: 50px;
     background-color: transparent;
     color: white;
     height: 50px;
-    width: 600px;
+    width: 95%;
     
 }
 
